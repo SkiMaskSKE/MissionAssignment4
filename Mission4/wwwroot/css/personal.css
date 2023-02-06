@@ -2,3 +2,8 @@
 li {
     font-family: 'MS UI Gothic';
 }
+
+.IzzyHelp {
+    align-items:center !important;
+    justify-content:center !important;
+}

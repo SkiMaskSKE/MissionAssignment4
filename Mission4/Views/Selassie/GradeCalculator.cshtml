@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model GradeCalculatorModel;
+
+<!--Grade Calculator form creation-->
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded IzzyHelp">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Grade Calculator (Input Percentages)</span>
+                        <span class="section-heading-lower"></span>
+                    </h2>
+                    <form method="post">
+                        <label>Assignments Grade:</label>
+                        <input id="AssGrade" asp-for="Assign" /><br />
+                        <label>Group Project Grade:</label>
+                        <input id="GroupGrade" asp-for="Group" /><br />
+                        <label>Quizzes Grade:</label>
+                        <input id="QGrade" asp-for="Quiz" /><br />
+                        <label>Midterm Exam Grade:</label>
+                        <input id="MidGrade" asp-for="Midterm" /><br />
+                        <label>Final Exam Grade:</label>
+                        <input id="FinalGrade" asp-for="Final" /><br />
+                        <label>Intex Grade:</label>
+                        <input id="IntexGrade" asp-for="Intex" /><br />
+
+
+                        <br />
+                        <label>Final Letter Grade:</label>
+                        <input id="LetterGrade" /><br />
+
+                        <input id="btnSend" type="submit" value="Submit" />
+
+                        <div asp-validation-summary="All"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/js/grades.js"></script>
